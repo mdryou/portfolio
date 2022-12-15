@@ -1,0 +1,67 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 400px;
+  }
+  
+  #pseudoClass div.center div:nth-child(even) {
+    background-color: lightblue;
+  }
+  
+  /* -------------------------------------------- */
+  /* ----------- Pseudo Elements ---------------- */
+  /* -------------------------------------------- */
+  #pseudoElt {
+    position: relative;
+  }
+  
+  #pseudoElt div:first-of-type {
+    background-color: lightblue;
+  }
+  
+  #pseudoElt div:first-of-type p:first-of-type {
+    background-color: yellow;
+    padding: 5px;
+  }
+  
+  #pseudoElt div:first-of-type p:first-of-type::before {
+    content:'Texte ajouté avant';
+    color : purple;
+  }
+  
+  #pseudoElt div:first-of-type p:last-of-type:hover::after {
+    content: 'BOUH';
+    font-weight: bold;
+    position: absolute;
+    font-size: 80px;
+    bottom: 100px;
+    right: calc(50% -10px);
+    color : yellow;
+    background-color: black;
+  }
+  
+  #pseudoElt div:nth-child(3) p::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: gold;
+    font-family: Harrington, Zapfino;
+    letter-spacing: 2px;
+  }
+  
+  #pseudoElt div:nth-child(4) p::first-line {
+    font-size: 2rem;
+    font-weight: bold;
+    color: gold;
+    font-family: Harrington, Zapfino;
+  }
+  
+  #pseudoElt div:nth-child(4) p::selection {
+    background-color: black;
+    color: rgb(27, 158, 27);
+  }
+  
+  
+  
